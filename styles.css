@@ -1,0 +1,47 @@
+/*
+order for generating syles:
+1.- Positioning
+2.- Box model
+3.- Typography 
+4.- Visuals (shadow-box, border-radius, etc.)
+5.- Others 
+*/
+:root {
+    /* Colors */
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #201e1c;
+    --black: #282623;
+    --gray: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+
+        /****Font size****/
+/* 
+ I would never resize html/root font size down to 62.5% mainly because it is completely unnecessary, and it carries risk.
+ You are correct you can mitigate against the accessibility issues by scaling the font size back up with 1.6rem on the body, BUT
+     -- not all elements inherit font size from the body so you have to remember to manually scale up them as well.
+     -- you need to do extra testing for that reason.
+     -- any rem sizes on third party components or plugins you bring in will need loads more overrides.
+     -- because you’re changing an established default, you cannot guarantee it will work correctly for everyone on every device, operating system, browser and tech set up.*/
+
+/* more information: https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/#the-625-trick */
+--14px: 0.875rem;
+--15px: 0.9375rem;
+--15_5px: 0.96875rem;
+--18px: 1.125rem;
+--19px: 1.1875rem;
+--20px: 1.25rem;
+--21px: 1.3125rem;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
