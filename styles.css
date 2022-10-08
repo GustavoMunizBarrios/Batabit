@@ -35,6 +35,9 @@ order for generating syles:
 --19px: 1.1875rem;
 --20px: 1.25rem;
 --21px: 1.3125rem;
+--22px: 1.375rem;
+--23px: 1.4375rem;
+--24px: 1.5rem;
 }
 *{
     box-sizing: border-box;
@@ -44,4 +47,78 @@ order for generating syles:
 html {
     font-family: 'DM Sans', sans-serif;
     font-family: 'Inter', sans-serif;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 20rem; /*320px */
+    height: 20.875rem; /*334px*/
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+
+}
+header img {
+    width: 9.375rem; /*150px*/
+    height: 1.5rem;
+    margin-top: 3.75rem;
+    align-self: center; /*This is the way to align an element 
+    that have a display-flex container*/
+}
+.header--title-container {
+    /*The following three lines will help us to keep the title
+     container at a size of 90%, this with a width between 
+     288px and 900px*/
+    width: 90%;
+    min-width: 18rem; /*288px*/
+    max-width: 56.25rem; /*900px*/
+    /*--------------------------------------------------------*/
+    margin-top: 2.5rem; /*40px*/
+    text-align: center;
+    align-self: center;
+
+}
+.header--title-container h1 {
+    font-size: var(--24px);
+    font-weight: bold;
+    line-height: 1.625rem; /*26px, this is the inter-line space*/
+    color: var(--just-white)
+}
+.header--title-container p {
+    margin-top: 1.5625rem;/*25px*/
+    font-size: var(--14px);
+    font-weight: 500;
+    line-height: 1.125rem;/*18px*/
+    color: var(--soft-orange);
+}
+
+.header--title-container .header--button {
+    position: absolute;
+    left: calc(50% - 7.125rem); /*50% - 114px*/
+    top: 16.875rem; /*270px*/
+    display: block;
+    margin-top: 2.1875rem; /* 35px */
+    padding: 0.9375rem; /* 15px */
+    width: 14.3125rem; /* 229px */
+    height: 3rem; /* 48px */
+    background-color: var(--off-white);
+    /* Sombra */
+    box-shadow: 0px 4px 8px rgba(89, 73,30,0.16);
+    border: none;
+    border-radius: 0.3125rem; /* 5px */
+    font-size: var(--14px);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+.header--button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url(./assets/icons/down-arrow.svg);
 }
