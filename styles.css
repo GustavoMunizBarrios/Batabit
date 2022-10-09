@@ -117,8 +117,54 @@ header img {
 }
 .header--button span {
     display: inline-block;
-    width: 13px;
-    height: 8px;
-    margin-left: 10px;
+    width: 0.8125rem; /*13px*/
+    height: 0.5rem; /* 8px */
+    margin-left: 0.625rem; /* 10px */
     background-image: url(./assets/icons/down-arrow.svg);
+}
+main {
+    width: 100%;
+    min-width: 20rem; /* 320px */
+    height: auto;
+    background-color: var(--off-white);
+}
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 5rem; /* 80px */
+    padding-bottom: 1.875rem; /* 30px */
+    text-align: center;
+}
+
+.main-exchange-container--title {
+    width: 90%;
+    min-width: 18rem; /*288px*/
+    max-width: 56.25rem; /* 900px */
+    margin: 0 auto;
+}
+
+.main-exchange-container .backgroundImg {
+    width: 12.5rem; /* 200px */
+    height: 12.5rem; /* 200px */
+    margin: 0 auto; /* To positioning in the center */
+    margin-bottom: 3.125rem; /* 50px */
+    background-image: url(./assets/img/Bitcoin.svg);
+    /*To ensure that the image is always in the center:*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-exchange-container h2 {
+    margin-bottom: 30px;
+    font-size: var(--24px);
+    font-weight: bold;
+    line-height: 1.625rem; /* 26px */
+    color: var(--black);
+}
+.main-exchange-container p{
+    margin-bottom: 1.875rem; /* 30px */
+    font-size: var(--14px);
+    font-weight: 500;
+    line-height: 1rem; /* 16px */
+    color: #757575;
 }
