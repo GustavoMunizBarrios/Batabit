@@ -347,9 +347,9 @@ main {
 }
 .product-detail--card .clock {
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 10px;
+    width: 1.25rem; 
+    height: 1.25rem;
+    margin-bottom: 0.625rem;
     background-image: url(./assets/icons/clock.svg);
     background-size: cover;
     background-position: center;
@@ -357,9 +357,9 @@ main {
 }
 .product-detail--card .eye {
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 10px;
+    width: 1.25rem; 
+    height: 1.25rem;
+    margin-bottom: 0.625rem;
     background-image: url(./assets/icons/eye.svg);
     background-size: cover;
     background-position: center;
@@ -367,9 +367,9 @@ main {
 }
 .product-detail--card .buy {
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 10px;
+    width: 1.25rem; 
+    height: 1.25rem;
+    margin-bottom: 0.625rem;
     background-image: url(./assets/icons/dollar-sign.svg);
     background-size: cover;
     background-position: center;
@@ -377,9 +377,9 @@ main {
 }
 .product-detail--card .nike {
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 10px;
+    width: 1.25rem; 
+    height: 1.25rem;
+    margin-bottom: 0.625rem;
     background-image: url(./assets/icons/check-circle.svg);
     background-size: cover;
     background-position: center;
@@ -397,4 +397,21 @@ main {
     font-weight: 500;
     line-height: var(--18px);
     color: #808080;
+}
+.bitcoin-img-container {
+    width: 100%;
+    min-width: 20rem; /* 320px */
+    height: 50vh;
+    background-image: url(./assets/img/bitcoinbaby2x.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bitcoin-img-container h2 {
+    padding-top: 60px;
+    font-size: var(--24px);
+    font-weight: bold;
+    line-height: 26px;
+    color: var(--just-white);
+    text-align: center;
 }
