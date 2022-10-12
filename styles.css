@@ -234,16 +234,16 @@ main {
 .comission-table--container .table__right  {
     font-size: var(--14px);
     font-weight: normal;
-    line-height: 17px;
+    line-height: 1.0625rem; /* 17px */
     color: #757575;
 }
 .currency-table--container .down, 
 .down-ripple,
 .down-stellar {
     display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-left: 10px;
+    width: 0.9375rem; /* 15px */
+    height: 0.9375rem; /* 15px */
+    margin-left: 0.625rem; /* 10px */
     background-image: url(./assets/icons/trending-down.svg);
     background-size: cover;
     background-position: center;
@@ -251,17 +251,37 @@ main {
 }
 .currency-table--container .up {
     display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-left: 10px;
+    width: 0.9375rem; /* 15px */
+    height: 0.9375rem; /* 15px */
+    margin-left: 0.625rem; /* 10px */
     background-image: url(./assets/icons/trending-up.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.currency-table--date,
-.comission-table--date {
-    width: 190px;
-    height: 30px;
+.currency-table--date{
+    width: 11.875rem; /* 190px */
+    height: 2.6rem; /* 41.6px */
     margin: 0 auto;
+    margin-top: 0.9375rem; /* 15px */
+    padding: 0.5rem; /* 8px */
+    background-color: var(--soft-orange);
+    border-radius: 0.5rem; /* 8px */
+}
+
+.comission-table--date {
+    width: 11.875rem; /* 190px */
+    height: 2.6rem; /* 41.6px */
+    margin: 0 auto;
+    margin-top: 0.9375rem; /* 15px */
+    padding: 0.5rem; /* 8px */
+    background-color: var(--soft-blue);
+    border-radius: 0.5rem; /* 8px */
+}
+.currency-table--date p, 
+.comission-table--date p {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 300;
+    color: var(--warm-black);
 }
