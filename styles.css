@@ -47,6 +47,7 @@ order for generating syles:
 html {
     font-family: 'DM Sans', sans-serif;
     font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -121,6 +122,9 @@ header img {
     height: 0.5rem; /* 8px */
     margin-left: 0.625rem; /* 10px */
     background-image: url(./assets/icons/down-arrow.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 main {
     width: 100%;
@@ -286,7 +290,7 @@ main {
 }
 .currency-table--date p, 
 .comission-table--date p {
-    font-size: 12px;
+    font-size: 12px; /**/
     line-height: 15px;
     font-weight: 300;
     color: var(--warm-black);
@@ -311,6 +315,9 @@ main {
     top: -0.625rem; /* -10px */
     left: calc(50% - 1.25rem);
     background-image: url(./assets/icons/batata.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .product-detail--title {
     width: 90%;
@@ -414,4 +421,45 @@ main {
     line-height: 26px;
     color: var(--just-white);
     text-align: center;
+}
+/******************************************************************/
+/*------------------------- PLANS SECTION ------------------------*/
+/******************************************************************/
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.plans--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto; /*only the text can limit the size of container*/
+    margin: 0 auto; /*to center the container*/
+    margin-bottom: 50px;
+}
+.plans--title h2 {
+    padding-top: 50px;
+    font-size: var(--24px);
+    font-weight: bold;
+    color: var(--black);
+}
+.plans--title p {
+    padding-top: 30px;
+    font-size: var(--14px);
+    font-weight: 500;
+    line-height: var(--18px);
+    color: #757575;
+}
+.plans-container--card {
+    position: relative;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0; /* top: 50px, Left and right: auto, bottom:0 */
+    padding: 0 15px; /* top and bottom: 0, left and right: 15 */
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
