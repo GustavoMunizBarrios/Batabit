@@ -178,13 +178,20 @@ main {
 /******************************************************************/
 /*---------------------- TABLES SECTION --------------------------*/
 /******************************************************************/
+.main-tables-container {
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
 .main-currency-table, 
 .main-comission-table {
+    scroll-snap-align: center;
     width: 70%;
     min-width: 14.6875rem; /*235px*/
     max-width: 31.25rem; /*500px*/
     height: 22.5rem; /*360px*/
-    margin: 0 auto;  /* To positioning in the center */
+    margin: 0 0.9375rem auto;  /* To positioning in the center */
     margin-bottom: 1.875rem; /* 30px */
     font-family: "Inter", sans-serif;
 }
@@ -206,6 +213,7 @@ main {
 }
 .currency-table--container,
 .comission-table--container {
+
     width: 90%; /*90% of the principal container*/
     min-width: 14.375rem; /*320px*/
     max-width: 18.75rem; /*300px*/
@@ -512,23 +520,23 @@ main {
     color: var(--just-white);
 }
 .plan-card--title {
-    padding-top: 30px;
+    padding-top: 1.875rem; /* 30px */
     font-size: var(--14px);
     font-weight: bold;
     line-height: var(--18px);
     color: black;
 }
 .plan-card--price {
-    padding: 5px 0; /* top and bottom: 5px, left and right: auto */
+    padding: 0.3125rem 0; /* top and bottom: 5px, left and right: auto */
     font-size: var(--52px);
     font-weight: bold;
     color: black;
 }
 .plan-card--price sup {
     font-size: var(--14px);
-    padding-right: 5px;
+    padding-right: 0.3125rem; /* 5px */
     font-weight: 400;
-    vertical-align: 28px;
+    vertical-align: 1.75rem; /* 28px */
    
 }
 .plan-card--saving {
@@ -536,12 +544,12 @@ main {
     color: #757575;
 }
 .plan-card--ca {
-    width: 150px;
-    height: 48px;
-    margin-top: 20px;
+    width: 9.375rem; /* 150px */
+    height: 3rem; /* 48px */
+    margin-top: 1.25rem; /* 20px */
     background-color: #faf8f7;
     border: 2px solid var(--bitcoin-orange);
-    border-radius: 4px;
+    border-radius: 0.25rem; /* 4px */
     font-family: 'DM Sans', sans-serif;
     font-size: var(--14px);
     font-weight: bold;
@@ -550,8 +558,8 @@ main {
 }
 .plan-card--ca span {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 1.25rem; /* 20px */
+    height: 1.25rem; /* 20px */
     background-image: url(./assets/icons/orange-right-arrow.svg);
     vertical-align: text-bottom;
 }
@@ -562,7 +570,7 @@ main {
 footer {
     display: flex;
     width: 100%;
-    height: 150px;
+    height: 9.375rem; /* 150px */
     background-color: var(--bitcoin-orange );
 }
 footer section {
