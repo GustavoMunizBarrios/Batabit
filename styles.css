@@ -360,7 +360,7 @@ main {
     margin: 0.9375rem auto; /*To center the container*/
     padding: 0.9375rem; /* 15px */
     background-color: var(--black);
-    border-radius: 5px;
+    border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);    
 }
 .product-detail--card .clock {
