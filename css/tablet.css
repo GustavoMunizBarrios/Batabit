@@ -1,7 +1,8 @@
 .main-tables-container {
     display: flex;
     width: 58.125rem; /* 930px */
-    margin: 0 auto;
+    margin: 0 auto; /*To center the elements (the tables in this case)*/
+    overflow-x: hidden;
 }
 .main-comission-table .comission-table--title {
     padding-left: 4.375rem;
@@ -15,7 +16,11 @@
     width: 58.125rem; /*840px*/
     margin: 0 auto;
 }
-
+.bitcoin-img-container { 
+    background: url('/Batabit/assets/img/bitcoinbaby2x.jpg') no-repeat center/cover;
+    background-attachment: fixed; /* to keep the image fixed while scrolling */
+}
 .plans-container--slider {
     justify-content: center;
+    overflow-x: hidden;
 }
