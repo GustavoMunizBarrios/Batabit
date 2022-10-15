@@ -1,2 +1,2 @@
 # Batabit
-A real time cryptocurrency platform (Responsive design)
+Layout of a cryptocurrency platform, using a responsive design approach.
